@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className="container px-4 mx-auto realtive text-sm">
             <div className="flex justify-center items-center">
                 <div className="flex items-center flex-shrink-0">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="logo" />
                 </div>
             </div>
         </div>
