@@ -9,7 +9,7 @@ const Navbar = () => {
   cost toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
   };
-  
+
   return (
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
       <div className="container px-4 mx-auto realtive text-sm">
@@ -32,6 +32,11 @@ const Navbar = () => {
             <a href="#" className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md">
               Create an account
             </a>
+          </div>
+          <div className="lg:hidden md:flex flex-col justify-end">
+            <button onClick={toggleNavbar}>
+              {mobileDrawerOpen ? <X /> : <Menu />}
+            </button>
           </div>
         </div>
       </div>
