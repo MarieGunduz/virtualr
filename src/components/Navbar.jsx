@@ -6,7 +6,7 @@ import { navItems } from "../constants";
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
-  cost toggleNavbar = () => {
+  const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
   };
 
@@ -39,6 +39,11 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+        {mobileDrawerOpen && {
+          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+          
+          </div>
+        }}
       </div>
     </nav>
   );
